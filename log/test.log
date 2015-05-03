@@ -1,0 +1,114 @@
+  [1m[36m (1146.7ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (2159.0ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36m (37.3ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 14:05:10 +0100
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (119.9ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (1909.8ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 14:09:23 +0100
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (121.9ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (2461.8ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 14:25:45 +0100
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (125.2ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (1083.0ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 14:40:33 +0100
+Processing by RestaurantsController#index as HTML
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (154.6ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (1107.5ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 14:50:07 +0100
+Processing by RestaurantsController#index as HTML
+  Rendered restaurants/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 2670ms (Views: 2638.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (120.1ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (1226.9ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 14:54:35 +0100
+Processing by RestaurantsController#index as HTML
+  Rendered restaurants/index.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 442ms (Views: 399.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (121.4ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (437.6ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 14:55:14 +0100
+Processing by RestaurantsController#index as HTML
+  Rendered restaurants/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 203ms (Views: 191.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (120.3ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (618.3ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 14:56:03 +0100
+Processing by RestaurantsController#index as HTML
+  Rendered restaurants/index.html.haml within layouts/application (23.1ms)
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (118.6ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (433.8ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 14:56:24 +0100
+Processing by RestaurantsController#index as HTML
+  Rendered restaurants/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 370ms (Views: 341.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (119.7ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (1095.8ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 14:57:20 +0100
+Processing by RestaurantsController#index as HTML
+  Rendered restaurants/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 371ms (Views: 337.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (423.8ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (445.8ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36mSQL (14.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.6ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (26.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 14:58:43 +0100
+Processing by RestaurantsController#index as HTML
+  Rendered restaurants/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 440ms (Views: 399.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (119.5ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (407.4ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.9ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 14:59:26 +0100
+Processing by RestaurantsController#index as HTML
+  Rendered restaurants/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 429ms (Views: 398.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (285.9ms)[0m  [1mDROP DATABASE IF EXISTS "yelp-clone_test"[0m
+  [1m[35m (749.7ms)[0m  CREATE DATABASE "yelp-clone_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (5.2ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (17.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.6ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (15.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants" for 127.0.0.1 at 2015-05-03 15:00:00 +0100
+Processing by RestaurantsController#index as HTML
+  Rendered restaurants/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 407ms (Views: 364.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
