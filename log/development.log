@@ -1608,3 +1608,98 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+
+
+Started GET "/restaurants" for ::1 at 2015-05-03 17:31:23 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.haml within layouts/application (20.9ms)
+Completed 200 OK in 61ms (Views: 56.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-03 17:31:23 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-03 17:31:23 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-03 17:31:23 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-03 17:31:23 +0100
+
+
+Started GET "/assets/restaurants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-03 17:31:23 +0100
+
+
+Started GET "/assets/restaurants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-03 17:31:23 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-03 17:31:23 +0100
+
+
+Started GET "/restaurants/1/edit" for ::1 at 2015-05-03 17:31:24 +0100
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (99.4ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+PG::FeatureNotSupported: ERROR:  cached plan must not change result type
+: SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT 1
+  [1m[36mRestaurant Load (0.5ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered restaurants/edit.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 199ms (Views: 56.2ms | ActiveRecord: 99.9ms)
+
+
+Started PATCH "/restaurants/1" for ::1 at 2015-05-03 17:31:32 +0100
+Processing by RestaurantsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cV7qDzqsfHrsoougUYcgIt47k578h5HqlnJLJDyC8YgCEP26qCKRS+0eeakBhpUjvRHkIEEow6PC5vatjK0qqg==", "restaurant"=>{"name"=>"KFA"}, "commit"=>"Update Restaurant", "id"=>"1"}
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "restaurants" SET "name" = $1, "updated_at" = $2 WHERE "restaurants"."id" = $3  [["name", "KFA"], ["updated_at", "2015-05-03 16:31:32.726282"], ["id", 1]]
+  [1m[36m (15.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 22ms (ActiveRecord: 16.4ms)
+
+
+Started GET "/restaurants" for ::1 at 2015-05-03 17:31:32 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "restaurants"
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1/edit" for ::1 at 2015-05-03 17:31:34 +0100
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (2.3ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered restaurants/edit.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 63ms (Views: 59.5ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/restaurants/1" for ::1 at 2015-05-03 17:31:36 +0100
+Processing by RestaurantsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/3M31a+5iIOuzzsgrIfpwm/ILmZNLd9HnhDxhCAtWgiMPSBgPTdlsq9zySn8hlzDDOJZ2PCCjQ7KhEwNkAKBKg==", "restaurant"=>{"name"=>"KFC"}, "commit"=>"Update Restaurant", "id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "restaurants" SET "name" = $1, "updated_at" = $2 WHERE "restaurants"."id" = $3[0m  [["name", "KFC"], ["updated_at", "2015-05-03 16:31:36.923412"], ["id", 1]]
+  [1m[35m (15.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 20ms (ActiveRecord: 16.3ms)
+
+
+Started GET "/restaurants" for ::1 at 2015-05-03 17:31:36 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2015-05-03 17:31:38 +0100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered restaurants/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.3ms)
