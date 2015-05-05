@@ -23,6 +23,14 @@ feature 'reviewing' do
     expect(page).to have_content('You have already reviewed this restaurant')
   end
 
+  scenario 'users can delete only their own reviews' do
+    expect(current_path).to eq '/restaurants'
+    click_link 'Sign out'
+    new_user
+    click_link 'Delete KFC Review'
+    expect(page).to have_content('You can only delete your own reviews')
+  end
+
   def create_review
     visit '/restaurants'
     click_link 'Review KFC'
@@ -41,5 +49,14 @@ feature 'reviewing' do
     click_link 'Add a restaurant'
     fill_in 'Name', with: name
     click_button 'Create Restaurant'
+  end
+
+  def new_user
+    visit '/restaurants'
+    click_link 'Sign up'
+    fill_in 'Email', with: "test2@test.com"
+    fill_in 'Password', with: "testtest"
+    fill_in 'Password confirmation', with: "testtest"
+    click_button 'Sign up'
   end
 end

@@ -17,6 +17,7 @@
       %ul
         - restaurant.reviews.each do |review|
           %li
+            = link_to "Delete #{restaurant.name} Review", restaurant_review_path(restaurant, review), method: :delete
             = review.thoughts
             %strong= review.rating
             /5
