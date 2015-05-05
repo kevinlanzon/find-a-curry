@@ -50,4 +50,5 @@ group :test do
   gem 'capybara'
   gem 'shoulda'
   gem 'launchy'
+  gem 'rspec-collection_matchers'
 end
