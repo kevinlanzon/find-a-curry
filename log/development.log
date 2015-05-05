@@ -2960,3 +2960,10 @@ Processing by RestaurantsController#index as HTML
   [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."restaurant_id" = $1[0m  [["restaurant_id", 4]]
   Rendered restaurants/index.html.haml within layouts/application (4.8ms)
 Completed 200 OK in 72ms (Views: 70.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-05-05 14:55:17 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/kevinlanzon/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (1.7ms)
+  Rendered /Users/kevinlanzon/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 283ms (Views: 216.9ms | ActiveRecord: 4.7ms)
