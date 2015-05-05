@@ -28,4 +28,3 @@ end
     reviewed_restaurants.include? restaurant
   end
 end
-
