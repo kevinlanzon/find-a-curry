@@ -11,16 +11,17 @@ class RestaurantsController < ApplicationController
   end
 
   def create
-    @restaurant = Restaurant.new(restaurant_params)
+    @user = current_user
+    @restaurant = @user.restaurants.new(restaurant_params)
     if @restaurant.save
       redirect_to restaurants_path
     else
       render 'new'
+    end
   end
-end
 
   def restaurant_params
-    params.require(:restaurant).permit(:name)
+    params.require(:restaurant).permit(:name, :description, :user_id)
   end
 
   def show
@@ -29,12 +30,16 @@ end
 
   def edit
     @restaurant = Restaurant.find(params[:id])
+    if current_user.id != @restaurant.user_id
+      flash[:notice] = 'Only the creator of the restaurant can edit it'
+      redirect_to '/restaurants'
+    end
   end
 
   def update
     @restaurant = Restaurant.find(params[:id])
     @restaurant.update(restaurant_params)
-
+    flash[:notice] = "Restaurant updated"
     redirect_to '/restaurants'
   end
 
