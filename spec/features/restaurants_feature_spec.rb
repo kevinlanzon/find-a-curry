@@ -101,7 +101,7 @@ feature 'restaurants' do
 
 
   def sign_in
-    user = create(:user, id: 1)
+    user = create(:user, id: 2)
     login_as(user, :scope => :user)
   end
 
