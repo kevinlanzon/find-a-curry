@@ -1,15 +1,11 @@
 - if @restaurants.any?
   - @restaurants.each do |restaurant|
     %h1= link_to restaurant.name, restaurant_path(restaurant)
+    %h3 Average rating:
+    = star_rating(restaurant.average_rating)
     %h5= link_to "Edit #{restaurant.name}", edit_restaurant_path(restaurant)
     %h5= link_to "Review #{restaurant.name}", new_restaurant_review_path(restaurant)
     %h5= link_to "Delete #{restaurant.name}", restaurant_path(restaurant), method: :delete
-    %h3 Average rating: #{restaurant.average_rating.to_i}
-- else
-  %h3 No restaurants yet
-
-- if @restaurants.any?
-  - @restaurants.each do |restaurant|
     %h3
       Review for
       = restaurant.name
@@ -20,9 +16,9 @@
           %li
             = link_to "Delete #{restaurant.name} Review", restaurant_review_path(restaurant, review), method: :delete
             = review.thoughts
-            %strong= review.rating
-            /5
     - else
       %p No reviews
+- else
+  %h3 No restaurants yet
 
 = link_to 'Add a restaurant', new_restaurant_path
