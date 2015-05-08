@@ -14,11 +14,11 @@
       %ul
         - restaurant.reviews.each do |review|
           %li
-            = link_to "Delete #{restaurant.name} Review", restaurant_review_path(restaurant, review), method: :delete
-            = review.thoughts
+            %p= pluralize review.endorsements.count, 'endorsement'
+            %h3= review.thoughts
+            %p= link_to "Delete #{restaurant.name} Review", review_path(review), method: :delete
     - else
       %p No reviews
 - else
   %h3 No restaurants yet
-
 = link_to 'Add a restaurant', new_restaurant_path
