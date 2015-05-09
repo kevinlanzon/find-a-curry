@@ -31,6 +31,11 @@ gem 'omniauth-facebook'
 
 gem "factory_girl_rails", "~> 4.0"
 
+gem 'poltergeist'
+
+gem 'database_cleaner'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
