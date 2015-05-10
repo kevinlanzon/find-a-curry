@@ -11,8 +11,6 @@ This project is a clone of [Yelp](http://www.yelp.co.uk/). The goal is to introd
 - Validations
 - AJAX in Rails
 
-This is version 1 of the project, without styling and completed in one day. I pair programmed with [Meads](https://github.com/meads58).
-
 The objectives of this exercise was OOD, learning folder structure, setting up a postgresql database and TDD.
 
 Technologies used
@@ -25,6 +23,9 @@ Technologies used
 - FactoryGirl
 - Devise
 - Shoulda
+- Poltergeist
+- AJAX
+- CoffeeScript
 
 How to clone this repo
 ----
