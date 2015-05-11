@@ -26,6 +26,7 @@ Technologies used
 - Poltergeist
 - AJAX
 - CoffeeScript
+- Haml
 
 How to clone this repo
 ----
