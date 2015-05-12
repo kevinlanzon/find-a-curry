@@ -27,6 +27,7 @@ Technologies used
 - AJAX
 - CoffeeScript
 - Haml
+- AWS S3
 
 How to clone this repo
 ----
