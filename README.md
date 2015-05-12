@@ -24,6 +24,7 @@ Technologies used
 - Devise
 - Shoulda
 - Paperclip
+- ImageMagick
 - Poltergeist
 - AJAX
 - CoffeeScript
