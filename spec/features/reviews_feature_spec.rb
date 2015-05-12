@@ -3,27 +3,30 @@ require 'rails_helper'
 feature 'reviewing' do
   before {sign_in}
   before {create_restaurant('KFC')}
-  before {create_review}
 
   scenario 'allows users to leave a review using a form' do
+    create_review
     expect(current_path).to eq '/restaurants'
     expect(page).to have_content('Tasty!')
   end
 
   scenario 'a restaurants review is deleted when the restaurant is deleted' do
+    create_review
     expect(page).to have_content('Tasty!')
     click_link 'Delete KFC'
     expect(page).not_to have_content('Tasty!')
   end
 
   scenario 'users can only leave one review per restaurant' do
-    expect(current_path).to eq '/restaurants'
+    create_review
+    visit '/restaurants'
     click_link 'Review KFC'
     create_review
     expect(page).to have_content('You have already reviewed this restaurant')
   end
 
   scenario 'users can delete only their own reviews' do
+    create_review
     expect(current_path).to eq '/restaurants'
     click_link 'Sign out'
     new_user
@@ -32,11 +35,11 @@ feature 'reviewing' do
   end
 
   scenario 'displays an average rating for all reviews' do
-    leave_review('So so', '3')
+    leave_review('So so', '2')
     click_link 'Sign out'
     new_user
-    leave_review('Great', '5')
-    expect(page).to have_content('Average rating: ★★★★☆')
+    leave_review('Great', '4')
+    expect(page).to have_content('Average rating: ★★★☆☆')
   end
 
   def leave_review(thoughts, rating)
@@ -56,7 +59,7 @@ feature 'reviewing' do
   end
 
   def sign_in
-    user = create(:user, id: 1)
+    user = create(:user)
     login_as(user, :scope => :user)
   end
 
