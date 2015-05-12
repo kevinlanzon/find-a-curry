@@ -22,14 +22,16 @@ feature 'restaurants' do
   end
 
   context 'creating restaurants' do
-    scenario 'prompts user to fill out a form, then displays the new restaurant' do
+    scenario 'prompts user to fill out a form, then displays the new restaurant with a photo' do
       sign_in
       visit '/restaurants'
       click_link 'Add a restaurant'
       fill_in 'Name', with: 'KFC'
+      page.attach_file('restaurant[image]', Rails.root + 'spec/features/files/saathi.png')
       click_button 'Create Restaurant'
       expect(page).to have_content 'KFC'
       expect(current_path).to eq '/restaurants'
+      expect(page).to have_css("img[src*='saathi.png']")
     end
   end
 
