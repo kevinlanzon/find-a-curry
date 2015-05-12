@@ -14,8 +14,6 @@ gem 'haml-rails', '~> 0.9.0'
 gem 'devise'
 gem 'omniauth-facebook'
 gem "factory_girl_rails", "~> 4.0"
-gem 'poltergeist'
-gem 'database_cleaner'
 gem 'paperclip'
 gem 'aws-sdk'
 
@@ -32,4 +30,6 @@ group :test do
   gem 'shoulda'
   gem 'launchy'
   gem 'rspec-collection_matchers'
+  gem 'poltergeist'
+  gem 'database_cleaner'
 end

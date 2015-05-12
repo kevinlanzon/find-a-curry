@@ -1,6 +1,6 @@
 class Restaurant < ActiveRecord::Base
 
-  has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
+  has_attached_file :image, :styles => { :medium => "300x300>" }, :default_url => "https://yelp-clone-lanzon.amazons3.com/:style/missing.png"
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 
   has_many :reviews, dependent: :destroy
