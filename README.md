@@ -23,6 +23,7 @@ Technologies used
 - FactoryGirl
 - Devise
 - Shoulda
+- Paperclip
 - Poltergeist
 - AJAX
 - CoffeeScript
