@@ -8,12 +8,21 @@
     = csrf_meta_tags
 
   %body
+    %nav.navbar.navbar-default
+      .caontainer
+        .navbar-brand= link_to "Yelp", root_path
+
+        - if user_signed_in?
+          %ul.nav.navbar-nav.navbar-right
+            %li= link_to 'Add a restaurant', new_restaurant_path
+            %li= link_to "My Account", edit_user_registration_path
+            %li= link_to "Sign out", destroy_user_session_path, method: :delete
+        - else
+          %ul.nav.navbar-nav.navbar-right
+            %li= link_to "Sign in", new_user_session_path
+            %li= link_to "Sign up", new_user_registration_path
+            %li= link_to 'Add a restaurant', new_restaurant_path
+
     = notice
     = alert
     = yield
-
-    - if user_signed_in?
-      = link_to "Sign out", destroy_user_session_path, method: :delete
-    - else
-      = link_to "Sign in", new_user_session_path
-      = link_to "Sign up", new_user_registration_path
