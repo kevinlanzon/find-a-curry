@@ -39,7 +39,6 @@ feature 'reviewing' do
     visit '/restaurants'
     click_link 'Endorse'
     expect(page).to have_content('1 endorsement')
-    save_and_open_page
   end
 
   scenario 'displays an average rating for all reviews' do
