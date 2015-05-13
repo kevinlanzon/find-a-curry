@@ -14,7 +14,7 @@ This project is a clone of [Yelp](http://www.yelp.co.uk/). The goal is to introd
 - Validations
 - AJAX in Rails
 
-The objectives of this exercise was OOD, learning folder structure, setting up a postgresql database and TDD.
+The objectives of this exercise was OOD, learning folder structure, setting up a postgresql database and TDD...and find an awesome curry.
 
 Screenshot
 ---
