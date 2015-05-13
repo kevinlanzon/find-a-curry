@@ -5,7 +5,7 @@ Yelp4Curry
 ==========
 [Makers Academy](http://www.makersacademy.com) Week 9 Project.
 
-This project is a clone of [Yelp](http://www.yelp.co.uk/). The goal is to introduce you to Rails, focusing especially on:
+This project is a clone of [Yelp](http://www.yelp.co.uk/). The goal is to introduce you to Rails (and find the best curry in your area), focusing especially on:
 
 - Creating Rails applications
 - The structure of Rails apps (MVC, the router, helpers)
