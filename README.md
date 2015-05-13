@@ -1,6 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/kevinlanzon/yelp-clone/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/yelp-clone)
 [![Build Status](https://travis-ci.org/kevinlanzon/yelp-clone.svg?branch=master)](https://travis-ci.org/kevinlanzon/yelp-clone)
-[![Code Climate](https://codeclimate.com/github/kevinlanzon/yelp-clone/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/yelp-clone)
+[![Test Coverage](https://codeclimate.com/github/kevinlanzon/yelp-clone/badges/coverage.svg)](https://codeclimate.com/github/kevinlanzon/yelp-clone/coverage)
 Yelp Clone
 ==========
 [Makers Academy](http://www.makersacademy.com) Week 9 Project.
