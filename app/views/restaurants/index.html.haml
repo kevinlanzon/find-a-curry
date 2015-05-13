@@ -1,7 +1,7 @@
 - if @restaurants.any?
   - @restaurants.each do |restaurant|
     %h1= link_to restaurant.name, restaurant_path(restaurant)
-    = image_tag restaurant.image.url(:medium)
+    = image_tag restaurant.image.url(:thumb)
     %h5= link_to "Edit #{restaurant.name}", edit_restaurant_path(restaurant)
     %h5= link_to "Review #{restaurant.name}", new_restaurant_review_path(restaurant)
     %h5= link_to "Delete #{restaurant.name}", restaurant_path(restaurant), method: :delete
@@ -13,13 +13,14 @@
       %ul
         - restaurant.reviews.each do |review|
           %li
-            #{review.thoughts} Average rating: #{star_rating(restaurant.average_rating)}
-            = link_to "Endorse", review_endorsements_path(review), class: 'endorsements-link'
-            %span.endorsements_count= review.endorsements.count
-            = 'endorsement'.pluralize review.endorsements.count
+            #{review.thoughts}
             %p= link_to "Delete #{restaurant.name} Review", review_path(review), method: :delete
+            %p Average rating: #{star_rating(restaurant.average_rating)}
+            = link_to "Like", review_endorsements_path(review), class: 'endorsements-link'
+            %span.endorsements_count= review.endorsements.count
+            = 'Like'.pluralize review.endorsements.count
+
     - else
       %p No reviews
 - else
   %h3 No restaurants yet
-/ = link_to 'Add a restaurant', new_restaurant_path

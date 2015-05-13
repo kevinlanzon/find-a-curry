@@ -3,4 +3,5 @@
   = f.text_area :thoughts
   = f.label :rating
   = f.select :rating, (1..5)
-  = f.button :submit, 'Leave Review'
+  = f.button :submit, 'Leave Review', class: "btn btn-primary"
+  = link_to "Cancel", root_path

@@ -33,6 +33,7 @@ Technologies used
 - CoffeeScript
 - Haml
 - AWS S3
+- Bootstrap
 
 How to clone this repo
 ----

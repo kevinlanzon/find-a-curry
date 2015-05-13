@@ -9,8 +9,8 @@
 
   %body
     %nav.navbar.navbar-default
-      .caontainer
-        .navbar-brand= link_to "Yelp", root_path
+      .container
+        .navbar-brand= link_to "YelpCurry", root_path
 
         - if user_signed_in?
           %ul.nav.navbar-nav.navbar-right
@@ -22,7 +22,7 @@
             %li= link_to "Sign in", new_user_session_path
             %li= link_to "Sign up", new_user_registration_path
             %li= link_to 'Add a restaurant', new_restaurant_path
-
+  .container
     = notice
     = alert
     = yield

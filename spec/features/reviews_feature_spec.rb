@@ -37,8 +37,8 @@ feature 'reviewing' do
   scenario 'a review displays an endorsement associated with it', js: true do
     create_review
     visit '/restaurants'
-    click_link 'Endorse'
-    expect(page).to have_content('1 endorsement')
+    click_link 'Like'
+    expect(page).to have_content('1 Like')
   end
 
   scenario 'displays an average rating for all reviews' do
