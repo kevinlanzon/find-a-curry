@@ -19,7 +19,7 @@ The objectives of this exercise was OOD, learning folder structure, setting up a
 Screenshot
 ---
 <div align="center">
-        <img width="90%" src="/app/assets/images/curry_4_yelp.jpg">
+        <img width="100%" src="/app/assets/images/curry_4_yelp.jpg">
 
 </div>
 
