@@ -32,5 +32,5 @@ group :test do
   gem 'rspec-collection_matchers'
   gem 'poltergeist'
   gem 'database_cleaner'
-  gem "codeclimate-test-reporter", require: nil
+  gem "codeclimate-test-reporter", group: :test, require: nil
 end

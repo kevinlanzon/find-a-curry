@@ -6,4 +6,4 @@ script:
 
 addons:
   code_climate:
-    repo_token: <%= ENV["CODECLIMATE_REPO_TOKEN"] %>
+    repo_token: 4679e127af61726299d6e122a682dc150b828077580410f3c563a26c2916b9a8
