@@ -114,11 +114,11 @@ feature 'restaurants' do
   end
 
   def new_user
-    visit '/restaurants'
+    visit '/'
     click_link 'Sign up'
     fill_in 'Email', with: "test2@test.com"
-    fill_in 'Password', with: "testtest"
-    fill_in 'Password confirmation', with: "testtest"
+    fill_in 'user_password', with: "testtest"
+    fill_in 'user_password_confirmation', with: "testtest"
     click_button 'Sign up'
   end
 end
