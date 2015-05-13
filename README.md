@@ -16,6 +16,13 @@ This project is a clone of [Yelp](http://www.yelp.co.uk/). The goal is to introd
 
 The objectives of this exercise was OOD, learning folder structure, setting up a postgresql database and TDD.
 
+Screenshot
+---
+<div align="center">
+        <img width="70%" src="/app/assets/images/curry_4_yelp.jpg">
+
+</div>
+
 Technologies used
 ----
 - Ruby
