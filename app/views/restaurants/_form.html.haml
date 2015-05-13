@@ -1,5 +1,9 @@
 = simple_form_for @restaurant, html: {multipart: true} do |f|
+  .form-group
   = f.label :name
+  .form-group
   = f.text_field :name
+  .form-group
+  = f.input :image, input_html: { class: 'form_control' }
+  .form-group
   = f.button :submit, class: "btn btn-primary"
-  = f.file_field :image

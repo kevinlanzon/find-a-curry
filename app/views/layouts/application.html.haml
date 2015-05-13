@@ -2,7 +2,7 @@
 %html
   %head
     %meta(charset="UTF-8")
-    %title YelpClone
+    %title Yelp4Curry
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
@@ -10,12 +10,12 @@
   %body
     %nav.navbar.navbar-default
       .container
-        .navbar-brand= link_to "YelpCurry", root_path
+        .navbar-brand= link_to "Yelp4Curry", root_path
 
         - if user_signed_in?
           %ul.nav.navbar-nav.navbar-right
             %li= link_to 'Add a restaurant', new_restaurant_path
-            %li= link_to "My Account", edit_user_registration_path
+            %li= link_to "My account", edit_user_registration_path
             %li= link_to "Sign out", destroy_user_session_path, method: :delete
         - else
           %ul.nav.navbar-nav.navbar-right
