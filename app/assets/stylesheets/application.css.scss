@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require 'masonry/transitions'
  *= require_tree .
  *= require_self
  */
@@ -18,11 +19,11 @@
 @import "bootstrap";
 
 body {
-  background: #E9E9E9;
+  background: #E2DFDE;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 100;
+  font-weight: 200;
 }
 
 nav {

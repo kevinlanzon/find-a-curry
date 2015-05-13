@@ -34,6 +34,7 @@ Technologies used
 - Haml
 - AWS S3
 - Bootstrap
+- Masonry
 - CSS
 
 How to clone this repo
