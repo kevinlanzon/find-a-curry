@@ -17,6 +17,7 @@ gem "factory_girl_rails", "~> 4.0"
 gem 'paperclip'
 gem 'aws-sdk'
 gem 'bootstrap-sass', '~> 3.3.4.1'
+gem 'simple_form'
 
 
 group :development, :test do
