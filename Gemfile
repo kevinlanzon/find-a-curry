@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'rails', '4.2.1'
 gem 'pg'
@@ -19,6 +21,7 @@ gem 'aws-sdk'
 gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'simple_form'
 gem 'masonry-rails', '~> 0.2.4'
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'byebug'
