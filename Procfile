@@ -1,1 +1,1 @@
-web: bundle exec rails server thin -p $PORT -e $RACK_ENV
+web: bin/rails server -p $PORT -e $RAILS_ENV
