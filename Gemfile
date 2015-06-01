@@ -22,6 +22,7 @@ gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'simple_form'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'rails_12factor', group: :production
+gem 'thin'
 
 group :development, :test do
   gem 'byebug'
