@@ -50,7 +50,7 @@ Technologies used
 How to clone this repo
 ----
 ```sh
-git clone git@github.com:kevinlanzon/yelp-clone.git
+git clone git@github.com:kevinlanzon/yelp4curry.git
 ```
 
 How to run
