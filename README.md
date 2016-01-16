@@ -1,9 +1,8 @@
 [![Code Climate](https://codeclimate.com/github/kevinlanzon/yelp-clone/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/yelp-clone)
 [![Build Status](https://travis-ci.org/kevinlanzon/yelp4curry.svg?branch=master)](https://travis-ci.org/kevinlanzon/yelp4curry)
 [![Test Coverage](https://codeclimate.com/github/kevinlanzon/yelp-clone/badges/coverage.svg)](https://codeclimate.com/github/kevinlanzon/yelp-clone/coverage)
-Yelp4Curry
+FindACurry
 ==========
-[Makers Academy](http://www.makersacademy.com) Week 9 Project.
 
 This project is a clone of [Yelp](http://www.yelp.co.uk/). The goal is to introduce you to Rails (and find the best curry in your area), focusing especially on:
 
@@ -22,6 +21,10 @@ Screenshot
         <img width="100%" src="/app/assets/images/curry_4_yelp.jpg">
 
 </div>
+
+View live
+-----
+[FindACurry](https://find-a-curry.herokuapp.com/)
 
 Technologies used
 ----
