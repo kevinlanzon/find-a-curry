@@ -2,7 +2,7 @@
 %html
   %head
     %meta(charset="UTF-8")
-    %title Yelp4Curry
+    %title FindACurry
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
@@ -10,7 +10,7 @@
   %body
     %nav.navbar.navbar-default
       .container
-        .navbar-brand= link_to "Yelp4Curry", root_path
+        .navbar-brand= link_to "FindACurry", root_path
 
         - if user_signed_in?
           %ul.nav.navbar-nav.navbar-right
